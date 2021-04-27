@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Discord.Net.targets" />
+  <Import Project="../../StyleAnalyzer.targets" />
+  <PropertyGroup>
+    <AssemblyName>VkNet.Commands</AssemblyName>
+    <RootNamespace>VkNet.Commands</RootNamespace>
+    <Description>A VkNet extension adding support for bot commands.</Description>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">net461;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0;netstandard2.1</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>r0den.VkNet.Commands</PackageId>
+    <Title>VkNet.Commands</Title>
+    <Authors>Discord.Net Contributors; r0den</Authors>
+    <PackageProjectUrl>https://github.com/r0den/VkNet.Commands</PackageProjectUrl>
+    <PackageIconUrl>https://i1228.photobucket.com/albums/ee450/inyutin_mxim/vknet_zpsmyu5oa5i.png?t=1464596085</PackageIconUrl>
+    <RepositoryUrl>git://github.com/r0den/VkNet.Commands</RepositoryUrl>
+    <PackageTags>vk;vknet</PackageTags>
+    <Company>Discord.Net Contributors; r0den</Company>
+    <Product>VkNet.Commands</Product>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="6.0.0-preview.3.21201.4" />
+    <PackageReference Include="VkNet" Version="1.62.0" />
+  </ItemGroup>
+
+</Project>
